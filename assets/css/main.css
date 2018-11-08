@@ -1,0 +1,372 @@
+* {
+	box-sizing: border-box;
+  /* add a border with !important to view the boxes */
+  
+}
+
+a {
+	color: #55e0cb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+
+body {
+	font-family: franklin-gothic-urw,sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* content divs */
+.video {
+	justify-content: center;
+	position: absolute;
+    height: 90vh;
+
+}
+
+.video-title {
+	font-family: adso, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: #55e0cb;
+	font-size: 100px;
+	top: 15%;
+}
+
+.nav-container {
+	display:flex;
+	flex-wrap: wrap;
+	height:100%;
+	width: 100%;
+	position: relative;
+}
+
+.nav-left, .nav-right{
+ 	position: relative;
+}
+
+.nav-sketch{
+	cursor: pointer;
+  	position: absolute;
+}
+
+/* menu styling */
+
+.menu-button{
+	font-family: adso, sans-serif;
+ 	font-weight: 500;
+  	font-style: normal;
+  	color: #55e0cb;
+  	font-size: 50px;
+  	position: fixed;
+  	z-index: 999;
+  	top: 600px;
+    left: 46.5%;
+    cursor: pointer;
+}
+
+.menu-option-right {
+	background-color: black;
+	font-family: adso, sans-serif;
+ 	font-weight: 500;
+  	font-style: normal;
+  	color: #55e0cb;
+  	font-size: 50px;
+  	color: #55e0cb;
+  	padding: 20px;
+  	line-height: 100px;
+  	height: 100vh;
+  	width: 100vw;
+}
+
+.menu-title-left {
+	font-family: adso, sans-serif;
+ 	font-weight: 500;
+  	font-style: normal;
+  	color: #55e0cb;
+  	font-size: 150px; 
+  	padding: 40px;
+  	line-height: 124px;
+  	align-items: center;
+  	justify-content: center;
+  	background-color: white;
+  	height: 100vh;
+  	width: 100vw;
+}
+
+.menu {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: -100vh;
+  z-index: 3;
+  transition: all 1s;
+}
+
+.menu.showme {
+  bottom: 0vh;
+  transition: all 1s;
+}
+
+.xbutton{
+	position: absolute;
+	top: 8px;
+	right: 1%;
+	z-index: 99;
+	width: 25px;
+	height: 25px;
+}
+
+.essay{
+	height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: -100vh;
+  z-index: 3;
+  transition: all 1s;
+}
+
+.essay-button{
+	font-family: adso, sans-serif;
+ 	font-weight: 500;
+  	font-style: normal;
+  	color: #55e0cb;
+  	font-size: 50px;
+  	position: fixed;
+  	z-index: 999;
+  	top: 541px;
+    left: 46.5%;
+    cursor: pointer;
+}
+
+.essay.showme {
+  bottom: 0vh;
+  transition: all 1s;
+}
+
+/* Essay styling */
+
+.nav-left-essay {
+	background-color: black;
+	font-family: adso, sans-serif;
+ 	font-weight: 500;
+  	font-style: normal;
+	font-size: 50px;
+	color: #55e0cb;
+	padding: 20px;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	z-index: -20;
+}
+
+.nav-right-essay {
+	font-family: franklin-gothic-urw, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 25px;
+	padding: 20px;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	z-index: -20;
+}
+
+.vertical-line {
+	background-color: #55e0cb;
+	height: 500px;
+	width: 1px;
+	position: relative;
+	padding: 2px;
+	margin-left: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	align-content: center;
+}
+
+.essaytext{
+	justify-content: center;
+
+}
+
+
+/* sketch */
+
+.ns-1{
+  top:-669px;
+  left:27%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-2{
+  top:-268px;
+  left:56%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-3{
+  bottom: 239px;
+  left:155%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-4{
+  bottom: 383px;
+  left:76%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-5{
+  bottom: 237px;
+  left:166%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-6{
+  bottom: 13px;
+  left:-81%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-7{
+  bottom: 417px;
+  left: 56%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-8{
+  bottom: 21px;
+  left:15%;
+  width: 153px;
+  height: 254px;
+}
+
+.ns-9{
+  bottom: 239px;
+  left:153%;
+  width: 153px;
+  height: 254px;
+}
+
+
+/* card flip */
+
+.card__container {
+  height: 250px;
+  position: relative;
+  width: 150px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card .side__back {
+  background: #eaeaed;
+  transform: rotateY(180deg);
+}
+
+.card .side img {
+  height: 250px;
+  width: 150px;
+}
+
+/* pop up styling */
+
+.popup-flex {
+	display: flex;
+	flex-wrap:wrap;}
+
+.popup-flex img {
+	object-fit: contain;
+	width: 100%;
+	height: 90%;
+}
+
+.popup-left {
+	justify-content: flex-start;
+	background-color: black;
+	position: relative;
+}
+
+.popup-right {
+	justify-content: flex-end;
+	background-color: white;
+	position: relative;
+}
+
+.popup {
+	display:flex;
+	flex-wrap: wrap;
+	height:100%;
+	width: 100%;
+	cursor: pointer;
+	position: fixed;
+	top:0px;
+	left:0px;
+	display: none;
+}
+
+.popup.p-show {
+	display: block;
+}
+
+
+/* background */
+
+.linebg1{
+	z-index: -9999;
+}
+
+.linebg2{
+	z-index: -9999;
+}
+
+
+
+/* these are helper classes to change the width of the items quickly */
+
+.w-1of1 {flex:0 0 100%;}
+
+.w-1of2 {flex:0 0 50%;}
+
+.w-1of3 {flex:0 0 33.333%;}
+.w-2of3 {flex:0 0 66.666%;}
+
+.w-1of4{flex:0 0 25%;}
+.w-2of4{flex:0 0 50%;}
+.w-3of4{flex:0 0 75%;}
+
+.w-1of5 {flex:0 0 20%;}
+.w-2of5 {flex:0 0 40%;}
+.w-3of5 {flex:0 0 60%;}
+.w-4of5 {flex:0 0 80%;}
+
+.w-1of12 {flex:0 0 8.3333%;}
+      
